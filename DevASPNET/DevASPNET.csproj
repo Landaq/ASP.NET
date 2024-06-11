@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FrmASPNET.aspx" />
+    <Content Include="FrmResponseBuffer.aspx" />
+    <Content Include="FrmResponseRedirect.aspx" />
     <Content Include="FrmResponseWrite.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -79,6 +81,20 @@
     </Compile>
     <Compile Include="FrmASPNET.aspx.designer.cs">
       <DependentUpon>FrmASPNET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResponseBuffer.aspx.cs">
+      <DependentUpon>FrmResponseBuffer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmResponseBuffer.aspx.designer.cs">
+      <DependentUpon>FrmResponseBuffer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResponseRedirect.aspx.cs">
+      <DependentUpon>FrmResponseRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmResponseRedirect.aspx.designer.cs">
+      <DependentUpon>FrmResponseRedirect.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmResponseWrite.aspx.cs">
       <DependentUpon>FrmResponseWrite.aspx</DependentUpon>
