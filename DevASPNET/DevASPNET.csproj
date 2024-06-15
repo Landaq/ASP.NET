@@ -67,20 +67,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DevASPNET.css" />
+    <Content Include="FrmApplicationSession.aspx" />
     <Content Include="FrmASPNET.aspx" />
+    <Content Include="FrmPageLoad.aspx" />
+    <Content Include="FrmRequest.aspx" />
+    <Content Include="FrmRequestUserHostAddress.aspx" />
     <Content Include="FrmResponseBuffer.aspx" />
     <Content Include="FrmResponseRedirect.aspx" />
     <Content Include="FrmResponseWrite.aspx" />
+    <Content Include="FrmServerMapPath.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmApplicationSession.aspx.cs">
+      <DependentUpon>FrmApplicationSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmApplicationSession.aspx.designer.cs">
+      <DependentUpon>FrmApplicationSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmASPNET.aspx.cs">
       <DependentUpon>FrmASPNET.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmASPNET.aspx.designer.cs">
       <DependentUpon>FrmASPNET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPageLoad.aspx.cs">
+      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPageLoad.aspx.designer.cs">
+      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRequest.aspx.cs">
+      <DependentUpon>FrmRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRequest.aspx.designer.cs">
+      <DependentUpon>FrmRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRequestUserHostAddress.aspx.cs">
+      <DependentUpon>FrmRequestUserHostAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRequestUserHostAddress.aspx.designer.cs">
+      <DependentUpon>FrmRequestUserHostAddress.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmResponseBuffer.aspx.cs">
       <DependentUpon>FrmResponseBuffer.aspx</DependentUpon>
@@ -102,6 +136,13 @@
     </Compile>
     <Compile Include="FrmResponseWrite.aspx.designer.cs">
       <DependentUpon>FrmResponseWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServerMapPath.aspx.cs">
+      <DependentUpon>FrmServerMapPath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmServerMapPath.aspx.designer.cs">
+      <DependentUpon>FrmServerMapPath.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

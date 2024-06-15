@@ -28,8 +28,8 @@ namespace DevASPNET
         {
             string strUrl = string.Format(
                 "http://{0}/{1}?{2}={3}"
-                , "www.visualacademy"
-                , "defaujlt.htm", "UserID", "RedPlus");
+                , "www.visualacademy.com"
+                , "default.htm", "UserID", "RedPlus");
             Response.Redirect (strUrl);
         }
     }
