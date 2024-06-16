@@ -120,12 +120,22 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FrmBulletedList.aspx" />
     <Content Include="FrmButton.aspx" />
+    <Content Include="FrmCheckBox.aspx" />
+    <Content Include="FrmCheckBoxList.aspx" />
     <Content Include="FrmCommandControl.aspx" />
+    <Content Include="FrmDropDownList.aspx" />
+    <Content Include="FrmHtml.aspx" />
+    <Content Include="FrmHyperLink.aspx" />
+    <Content Include="FrmImage.aspx" />
     <Content Include="FrmImageButton.aspx" />
+    <Content Include="FrmImageMap.aspx" />
     <Content Include="FrmLabel.aspx" />
     <Content Include="FrmLinkButton.aspx" />
+    <Content Include="FrmListBox.aspx" />
     <Content Include="FrmStandardControl.aspx" />
+    <Content Include="FrmTable.aspx" />
     <Content Include="FrmTextBox.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -213,12 +223,33 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmBulletedList.aspx.cs">
+      <DependentUpon>FrmBulletedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmBulletedList.aspx.designer.cs">
+      <DependentUpon>FrmBulletedList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmButton.aspx.cs">
       <DependentUpon>FrmButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmButton.aspx.designer.cs">
       <DependentUpon>FrmButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckBox.aspx.cs">
+      <DependentUpon>FrmCheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCheckBox.aspx.designer.cs">
+      <DependentUpon>FrmCheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckBoxList.aspx.cs">
+      <DependentUpon>FrmCheckBoxList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCheckBoxList.aspx.designer.cs">
+      <DependentUpon>FrmCheckBoxList.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmCommandControl.aspx.cs">
       <DependentUpon>FrmCommandControl.aspx</DependentUpon>
@@ -227,12 +258,47 @@
     <Compile Include="FrmCommandControl.aspx.designer.cs">
       <DependentUpon>FrmCommandControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmDropDownList.aspx.cs">
+      <DependentUpon>FrmDropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDropDownList.aspx.designer.cs">
+      <DependentUpon>FrmDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHtml.aspx.cs">
+      <DependentUpon>FrmHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHtml.aspx.designer.cs">
+      <DependentUpon>FrmHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHyperLink.aspx.cs">
+      <DependentUpon>FrmHyperLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHyperLink.aspx.designer.cs">
+      <DependentUpon>FrmHyperLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImage.aspx.cs">
+      <DependentUpon>FrmImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmImage.aspx.designer.cs">
+      <DependentUpon>FrmImage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmImageButton.aspx.cs">
       <DependentUpon>FrmImageButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmImageButton.aspx.designer.cs">
       <DependentUpon>FrmImageButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImageMap.aspx.cs">
+      <DependentUpon>FrmImageMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmImageMap.aspx.designer.cs">
+      <DependentUpon>FrmImageMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmLabel.aspx.cs">
       <DependentUpon>FrmLabel.aspx</DependentUpon>
@@ -248,12 +314,26 @@
     <Compile Include="FrmLinkButton.aspx.designer.cs">
       <DependentUpon>FrmLinkButton.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmListBox.aspx.cs">
+      <DependentUpon>FrmListBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmListBox.aspx.designer.cs">
+      <DependentUpon>FrmListBox.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmStandardControl.aspx.cs">
       <DependentUpon>FrmStandardControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmStandardControl.aspx.designer.cs">
       <DependentUpon>FrmStandardControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTable.aspx.cs">
+      <DependentUpon>FrmTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTable.aspx.designer.cs">
+      <DependentUpon>FrmTable.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmTextBox.aspx.cs">
       <DependentUpon>FrmTextBox.aspx</DependentUpon>
