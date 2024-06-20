@@ -126,14 +126,19 @@
     <Content Include="FrmCheckBoxList.aspx" />
     <Content Include="FrmCommandControl.aspx" />
     <Content Include="FrmDropDownList.aspx" />
+    <Content Include="FrmHiddenField.aspx" />
     <Content Include="FrmHtml.aspx" />
     <Content Include="FrmHyperLink.aspx" />
     <Content Include="FrmImage.aspx" />
     <Content Include="FrmImageButton.aspx" />
     <Content Include="FrmImageMap.aspx" />
+    <Content Include="FrmInputControl.aspx" />
     <Content Include="FrmLabel.aspx" />
     <Content Include="FrmLinkButton.aspx" />
     <Content Include="FrmListBox.aspx" />
+    <Content Include="FrmLiteral.aspx" />
+    <Content Include="FrmRadioButton.aspx" />
+    <Content Include="FrmRadioButtonList.aspx" />
     <Content Include="FrmStandardControl.aspx" />
     <Content Include="FrmTable.aspx" />
     <Content Include="FrmTextBox.aspx" />
@@ -265,6 +270,13 @@
     <Compile Include="FrmDropDownList.aspx.designer.cs">
       <DependentUpon>FrmDropDownList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmHiddenField.aspx.cs">
+      <DependentUpon>FrmHiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHiddenField.aspx.designer.cs">
+      <DependentUpon>FrmHiddenField.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmHtml.aspx.cs">
       <DependentUpon>FrmHtml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -300,6 +312,13 @@
     <Compile Include="FrmImageMap.aspx.designer.cs">
       <DependentUpon>FrmImageMap.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmInputControl.aspx.cs">
+      <DependentUpon>FrmInputControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmInputControl.aspx.designer.cs">
+      <DependentUpon>FrmInputControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmLabel.aspx.cs">
       <DependentUpon>FrmLabel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -320,6 +339,27 @@
     </Compile>
     <Compile Include="FrmListBox.aspx.designer.cs">
       <DependentUpon>FrmListBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiteral.aspx.cs">
+      <DependentUpon>FrmLiteral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmLiteral.aspx.designer.cs">
+      <DependentUpon>FrmLiteral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadioButton.aspx.cs">
+      <DependentUpon>FrmRadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRadioButton.aspx.designer.cs">
+      <DependentUpon>FrmRadioButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadioButtonList.aspx.cs">
+      <DependentUpon>FrmRadioButtonList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRadioButtonList.aspx.designer.cs">
+      <DependentUpon>FrmRadioButtonList.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmStandardControl.aspx.cs">
       <DependentUpon>FrmStandardControl.aspx</DependentUpon>
