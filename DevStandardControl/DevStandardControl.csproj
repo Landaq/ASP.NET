@@ -120,12 +120,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FrmAdRotator.aspx" />
+    <Content Include="FrmAdRotator.xml" />
     <Content Include="FrmBulletedList.aspx" />
     <Content Include="FrmButton.aspx" />
+    <Content Include="FrmCalendar.aspx" />
+    <Content Include="FrmCalendarQueryString.aspx" />
     <Content Include="FrmCheckBox.aspx" />
     <Content Include="FrmCheckBoxList.aspx" />
     <Content Include="FrmCommandControl.aspx" />
     <Content Include="FrmDropDownList.aspx" />
+    <Content Include="FrmFileUpload.aspx" />
     <Content Include="FrmHiddenField.aspx" />
     <Content Include="FrmHtml.aspx" />
     <Content Include="FrmHyperLink.aspx" />
@@ -142,6 +147,7 @@
     <Content Include="FrmStandardControl.aspx" />
     <Content Include="FrmTable.aspx" />
     <Content Include="FrmTextBox.aspx" />
+    <Content Include="FrmWizard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -228,6 +234,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmAdRotator.aspx.cs">
+      <DependentUpon>FrmAdRotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmAdRotator.aspx.designer.cs">
+      <DependentUpon>FrmAdRotator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmBulletedList.aspx.cs">
       <DependentUpon>FrmBulletedList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -241,6 +254,20 @@
     </Compile>
     <Compile Include="FrmButton.aspx.designer.cs">
       <DependentUpon>FrmButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendar.aspx.cs">
+      <DependentUpon>FrmCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCalendar.aspx.designer.cs">
+      <DependentUpon>FrmCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendarQueryString.aspx.cs">
+      <DependentUpon>FrmCalendarQueryString.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCalendarQueryString.aspx.designer.cs">
+      <DependentUpon>FrmCalendarQueryString.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmCheckBox.aspx.cs">
       <DependentUpon>FrmCheckBox.aspx</DependentUpon>
@@ -269,6 +296,13 @@
     </Compile>
     <Compile Include="FrmDropDownList.aspx.designer.cs">
       <DependentUpon>FrmDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFileUpload.aspx.cs">
+      <DependentUpon>FrmFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmFileUpload.aspx.designer.cs">
+      <DependentUpon>FrmFileUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmHiddenField.aspx.cs">
       <DependentUpon>FrmHiddenField.aspx</DependentUpon>
@@ -382,6 +416,13 @@
     <Compile Include="FrmTextBox.aspx.designer.cs">
       <DependentUpon>FrmTextBox.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmWizard.aspx.cs">
+      <DependentUpon>FrmWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmWizard.aspx.designer.cs">
+      <DependentUpon>FrmWizard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -410,6 +451,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="files\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
