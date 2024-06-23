@@ -120,6 +120,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FrmlMultiView.aspx" />
+    <Content Include="FrmLocalize.aspx" />
+    <Content Include="FrmPanel.aspx" />
+    <Content Include="FrmPlaceHolder.aspx" />
+    <Content Include="FrmSubstitution.aspx" />
+    <Content Include="FrmXml.xsl" />
     <Content Include="FrmAdRotator.aspx" />
     <Content Include="FrmAdRotator.xml" />
     <Content Include="FrmBulletedList.aspx" />
@@ -148,6 +154,8 @@
     <Content Include="FrmTable.aspx" />
     <Content Include="FrmTextBox.aspx" />
     <Content Include="FrmWizard.aspx" />
+    <Content Include="FrmXml.aspx" />
+    <Content Include="FrmXml.xml" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -381,6 +389,34 @@
     <Compile Include="FrmLiteral.aspx.designer.cs">
       <DependentUpon>FrmLiteral.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmlMultiView.aspx.cs">
+      <DependentUpon>FrmlMultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmlMultiView.aspx.designer.cs">
+      <DependentUpon>FrmlMultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocalize.aspx.cs">
+      <DependentUpon>FrmLocalize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmLocalize.aspx.designer.cs">
+      <DependentUpon>FrmLocalize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPanel.aspx.cs">
+      <DependentUpon>FrmPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPanel.aspx.designer.cs">
+      <DependentUpon>FrmPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlaceHolder.aspx.cs">
+      <DependentUpon>FrmPlaceHolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPlaceHolder.aspx.designer.cs">
+      <DependentUpon>FrmPlaceHolder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmRadioButton.aspx.cs">
       <DependentUpon>FrmRadioButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -402,6 +438,13 @@
     <Compile Include="FrmStandardControl.aspx.designer.cs">
       <DependentUpon>FrmStandardControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmSubstitution.aspx.cs">
+      <DependentUpon>FrmSubstitution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSubstitution.aspx.designer.cs">
+      <DependentUpon>FrmSubstitution.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmTable.aspx.cs">
       <DependentUpon>FrmTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,6 +465,13 @@
     </Compile>
     <Compile Include="FrmWizard.aspx.designer.cs">
       <DependentUpon>FrmWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXml.aspx.cs">
+      <DependentUpon>FrmXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmXml.aspx.designer.cs">
+      <DependentUpon>FrmXml.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
