@@ -123,10 +123,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FrmCheckBoxListValidation.aspx" />
+    <Content Include="FrmCheckBoxRequiredValidationWithCustomValidator.aspx" />
     <Content Include="FrmCompareValidator.aspx" />
+    <Content Include="FrmCustomValidator.aspx" />
+    <Content Include="FrmDropDownListWithRequireFieldValidator.aspx" />
     <Content Include="FrmRangeValidator.aspx" />
+    <Content Include="FrmRegularExpressionValidator.aspx" />
     <Content Include="FrmRequiredFieldValidator.aspx" />
     <Content Include="FrmValidationControl.aspx" />
+    <Content Include="FrmValidationSummary.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -157,6 +163,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <None Include="Scripts\jquery-3.7.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.js" />
@@ -213,6 +220,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmCheckBoxListValidation.aspx.cs">
+      <DependentUpon>FrmCheckBoxListValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCheckBoxListValidation.aspx.designer.cs">
+      <DependentUpon>FrmCheckBoxListValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckBoxRequiredValidationWithCustomValidator.aspx.cs">
+      <DependentUpon>FrmCheckBoxRequiredValidationWithCustomValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCheckBoxRequiredValidationWithCustomValidator.aspx.designer.cs">
+      <DependentUpon>FrmCheckBoxRequiredValidationWithCustomValidator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmCompareValidator.aspx.cs">
       <DependentUpon>FrmCompareValidator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,12 +241,33 @@
     <Compile Include="FrmCompareValidator.aspx.designer.cs">
       <DependentUpon>FrmCompareValidator.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmCustomValidator.aspx.cs">
+      <DependentUpon>FrmCustomValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCustomValidator.aspx.designer.cs">
+      <DependentUpon>FrmCustomValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDropDownListWithRequireFieldValidator.aspx.cs">
+      <DependentUpon>FrmDropDownListWithRequireFieldValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDropDownListWithRequireFieldValidator.aspx.designer.cs">
+      <DependentUpon>FrmDropDownListWithRequireFieldValidator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmRangeValidator.aspx.cs">
       <DependentUpon>FrmRangeValidator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmRangeValidator.aspx.designer.cs">
       <DependentUpon>FrmRangeValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegularExpressionValidator.aspx.cs">
+      <DependentUpon>FrmRegularExpressionValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRegularExpressionValidator.aspx.designer.cs">
+      <DependentUpon>FrmRegularExpressionValidator.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmRequiredFieldValidator.aspx.cs">
       <DependentUpon>FrmRequiredFieldValidator.aspx</DependentUpon>
@@ -240,6 +282,13 @@
     </Compile>
     <Compile Include="FrmValidationControl.aspx.designer.cs">
       <DependentUpon>FrmValidationControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidationSummary.aspx.cs">
+      <DependentUpon>FrmValidationSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmValidationSummary.aspx.designer.cs">
+      <DependentUpon>FrmValidationSummary.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
