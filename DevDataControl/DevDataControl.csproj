@@ -156,8 +156,13 @@
     <Content Include="favicon.ico" />
     <Content Include="FrmDataList.aspx" />
     <Content Include="FrmDetailsView.aspx" />
+    <Content Include="FrmFormView.aspx" />
+    <Content Include="FrmGridView.aspx" />
+    <Content Include="FrmObjectDataSource.aspx" />
     <Content Include="FrmRepeater.aspx" />
     <Content Include="FrmSqlDataSource.aspx" />
+    <Content Include="FrmXmlDataSource.aspx" />
+    <Content Include="FrmXmlDataSource.xml" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -260,6 +265,28 @@
     <Compile Include="FrmDetailsView.aspx.designer.cs">
       <DependentUpon>FrmDetailsView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmFormView.aspx.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmFormView.aspx.designer.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGridView.aspx.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGridView.aspx.designer.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObjectDataSource.aspx.cs">
+      <DependentUpon>FrmObjectDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmObjectDataSource.aspx.designer.cs">
+      <DependentUpon>FrmObjectDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObjectDataSourceClass.cs" />
     <Compile Include="FrmRepeater.aspx.cs">
       <DependentUpon>FrmRepeater.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,6 +300,13 @@
     </Compile>
     <Compile Include="FrmSqlDataSource.aspx.designer.cs">
       <DependentUpon>FrmSqlDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXmlDataSource.aspx.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmXmlDataSource.aspx.designer.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
