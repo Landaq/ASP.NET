@@ -22,7 +22,7 @@
                 <LoggedInTemplate>
                     <!--로그인 후-->
                     <asp:LoginStatus ID="LoginStatus2" runat="server"
-                        LoginText="로그아웃" Visible="true" />
+                        LoginText="로그아웃" Visible="false" />
                     <a href="Logout.aspx">로그아웃</a> |
                     <asp:HyperLink ID="HyperLink2" runat="server"
                         NavigateUrl="~/UserInfo.aspx">
