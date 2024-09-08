@@ -138,6 +138,128 @@
         #endregion
 
         #region IsPhto() 함수
+        /// <summary>
+        /// 파일 확장자를 확인해서 파일이 이미지 파일인지 검사
+        /// </summary>
+        /// <param name="strFileNameTemp">확장자를 포함한 이미지 파일</param>
+        /// <returns>이미지 확장자이면, true 그렇지 않으면, false</returns>
+        public static bool IsPhoto(string strFileNameTemp)
+        {
+            string ext =
+                Path.GetExtension(strFileNameTemp).Replace(".","").ToLower();
+            bool blnResult = false;
+            if (ext =="gif" || ext =="jpg" || ext == "jpeg" || ext =="png")
+            {
+                blnResult = true;
+            }
+            else
+            {
+                blnResult= false;
+            }
+            return blnResult;
+        }
+        #endregion
+
+        #region 파일다운로드 기능
+        /// <summary>
+        /// 파일다운로드 기능
+        /// 주의 : 각 필드에 Null값이 들어가면 에러남
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="strFileName"></param>
+        /// <param name="strFileSize"></param>
+        /// <returns></returns>
+        public static string FuncFileDownSingle(
+            int id, string strFileName, string strFileSize)
+        {
+            if (strFileName.Length > 0)
+            {
+                return "<a href=\"/DotNetNote/BoardDown.aspx?Id="
+                    + id.ToString() + "\">"
+                    + DownloadType(strFileName, strFileName + "("
+                    + ConvertToFileSize(Convert.ToInt32(strFileSize)) + ")")
+                    + "</a>";
+            }
+            else
+            {
+                return "-";
+            }
+        }
+        #endregion
+
+        #region DownloadType() 함수
+        /// <summary>
+        /// 다운로드할 파일의 확장자를 통해 아이콘을 결정
+        /// </summary>
+        /// <param name="strFileName">파일 이름</param>
+        /// <param name="altString">alt 메시지로 넣은 문자열</param>
+        /// <returns></returns>
+        public static string DownloadType(string strFileName, string altString)
+        {
+            string strFileExt =
+                Path.GetExtension(strFileName).Replace(".", "").ToLower();
+            string r = "";
+            switch (strFileExt)
+            {
+                case "bmp":
+                    r = "<img src='/imges/ext/ext_bmp.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "css":
+                    r = "<img src='/imges/ext/ext_css.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "gif":
+                    r = "<img src='/imges/ext/ext_gif.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "htm":
+                    r = "<img src='/imges/ext/ext_htm.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "html":
+                    r = "<img src='/imges/ext/ext_html.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "jpg":
+                    r = "<img src='/imges/ext/ext_jpg.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "jpeg":
+                    r = "<img src='/imges/ext/ext_jpeg.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "js":
+                    r = "<img src='/imges/ext/ext_js.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "":
+                    r = "<img src='/imges/ext/ext_none.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "png":
+                    r = "<img src='/imges/ext/ext_png.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "sql":
+                    r = "<img src='/imges/ext/ext_sql.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "txt":
+                    r = "<img src='/imges/ext/ext_txt.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                case "zip":
+                    r = "<img src='/imges/ext/ext_zip.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+                default:
+                    r = "<img src='/imges/ext/ext_unknown.gif' border='0' alt='"
+                        + altString + "'>";
+                    break;
+            }
+            return r;
+        }
         #endregion
     }
 }
