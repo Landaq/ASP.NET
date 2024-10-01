@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoEngine", "MemoEngine.csproj", "{69042731-5899-4F14-9C84-D73F5F8C5A7C}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DotNetNote.Database", "..\DotNetNote.Database\DotNetNote.Database.sqlproj", "{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dul", "..\Dul\Dul.csproj", "{23C337FE-6EDB-4CCD-8389-82A48FA6E90F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{69042731-5899-4F14-9C84-D73F5F8C5A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69042731-5899-4F14-9C84-D73F5F8C5A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69042731-5899-4F14-9C84-D73F5F8C5A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5ABE87-4EB3-459E-9EA3-9EC2127A75BF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{23C337FE-6EDB-4CCD-8389-82A48FA6E90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C337FE-6EDB-4CCD-8389-82A48FA6E90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C337FE-6EDB-4CCD-8389-82A48FA6E90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C337FE-6EDB-4CCD-8389-82A48FA6E90F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

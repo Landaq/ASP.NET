@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.1.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -153,7 +156,18 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DotNetNote\BoardCommentDelete.aspx" />
+    <Content Include="DotNetNote\BoardDelete.aspx" />
+    <Content Include="DotNetNote\BoardDown.aspx" />
     <Content Include="DotNetNote\BoardList.aspx" />
+    <Content Include="DotNetNote\BoardModify.aspx" />
+    <Content Include="DotNetNote\BoardReply.aspx" />
+    <Content Include="DotNetNote\BoardView.aspx" />
+    <Content Include="DotNetNote\BoardWrite.aspx" />
+    <Content Include="DotNetNote\Default.aspx" />
+    <Content Include="DotNetNote\ImageDown.aspx" />
+    <Content Include="DotNetNote\ImageText.aspx" />
+    <Content Include="DotNetNote\ThumNail.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -184,6 +198,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -243,12 +258,93 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DotNetNote\BoardCommentDelete.aspx.cs">
+      <DependentUpon>BoardCommentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardCommentDelete.aspx.designer.cs">
+      <DependentUpon>BoardCommentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardDelete.aspx.cs">
+      <DependentUpon>BoardDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardDelete.aspx.designer.cs">
+      <DependentUpon>BoardDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardDown.aspx.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardDown.aspx.designer.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DotNetNote\BoardList.aspx.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DotNetNote\BoardList.aspx.designer.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardModify.aspx.cs">
+      <DependentUpon>BoardModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardModify.aspx.designer.cs">
+      <DependentUpon>BoardModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardReply.aspx.cs">
+      <DependentUpon>BoardReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardReply.aspx.designer.cs">
+      <DependentUpon>BoardReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardView.aspx.cs">
+      <DependentUpon>BoardView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardView.aspx.designer.cs">
+      <DependentUpon>BoardView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\BoardWrite.aspx.cs">
+      <DependentUpon>BoardWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardWrite.aspx.designer.cs">
+      <DependentUpon>BoardWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\ImageDown.aspx.cs">
+      <DependentUpon>ImageDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ImageDown.aspx.designer.cs">
+      <DependentUpon>ImageDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\ImageText.aspx.cs">
+      <DependentUpon>ImageText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ImageText.aspx.designer.cs">
+      <DependentUpon>ImageText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\Models\BoardWriteFormType.cs" />
+    <Compile Include="DotNetNote\Models\ContentEndcodingType.cs" />
+    <Compile Include="DotNetNote\Models\Note.cs" />
+    <Compile Include="DotNetNote\Models\NoteRepository.cs" />
+    <Compile Include="DotNetNote\ThumNail.aspx.cs">
+      <DependentUpon>ThumNail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ThumNail.aspx.designer.cs">
+      <DependentUpon>ThumNail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -279,6 +375,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="DotNetNote\Controls\" />
+    <Folder Include="DotNetNote\Documents\" />
+    <Folder Include="DotNetNote\images\" />
+    <Folder Include="DotNetNote\MyFiles\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +391,15 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dul\Dul.csproj">
+      <Project>{23c337fe-6edb-4ccd-8389-82a48fa6e90f}</Project>
+      <Name>Dul</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

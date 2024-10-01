@@ -74,7 +74,7 @@
     <Build Include="dbo\Stored Procedures\SearchMemo.sql" />
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Stored Procedures\Users_Procedures.sql" />
-    <Build Include="dbo\Tables\DotNetNote\Note.sql" />
+    <Build Include="dbo\Tables\DotNetNote\Notes.sql" />
     <Build Include="dbo\Tables\DotNetNote\NoteComment.sql" />
     <Build Include="dbo\Stored Procedures\DotNetNote\DNN_DeleteNote.sql" />
     <Build Include="dbo\Stored Procedures\DotNetNote\DNN_WriteNote.sql" />
